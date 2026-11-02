@@ -13,25 +13,25 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 
 function AppContent() {
-  const {theme} = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className={theme}>
-      
-       <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path='/products' element={<Products />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/about' element={<About/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
-    
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path='/products' element={<Products />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/about' element={<About />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+
 
     </div>
   )
@@ -41,10 +41,10 @@ function AppContent() {
 function App() {
   return (
     <CartProvider>
-    <ThemeProvider>
-      <AppContent/>
-    </ThemeProvider>
-    </CartProvider>  )
+      <ThemeProvider>
+        <AppContent />
+      </ThemeProvider>
+    </CartProvider>)
 }
 
 export default App

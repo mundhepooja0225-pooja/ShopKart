@@ -1,4 +1,3 @@
-
 export default [
     { id: 1, name: "Samsung", image: "https://www.cnet.com/wp-content/uploads/sites/2/e93c344e-48ee-4583-b4cb-16680d9938ce.jpg" },
     { id: 2, name: "boAt", image: "https://www.easeproduct.com/images/products/1751889461_boAt%20Airdopes%20s222.jpg" },

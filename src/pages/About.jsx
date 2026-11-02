@@ -1,6 +1,6 @@
 import React from 'react'
 import Brands from '../Components/Brands'
-import brands from '../data/Brands'
+import Brands from '../data/Brands'
 import { Link } from 'react-router-dom'
 
 
@@ -30,7 +30,7 @@ const About = () => {
             <section className='second-section'>
                 <h3>Trusted brands</h3>
                 <div className='brands'>
-                    {brands.map(brnd => (
+                    {Brands.map(brnd => (
                         <Brands
                             image={brnd.image}
                             name={brnd.name}
